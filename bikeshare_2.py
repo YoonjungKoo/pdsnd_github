@@ -105,9 +105,7 @@ def display_raw_data(df):
             print("잘못된 입력입니다. 'yes' 또는 'no'를 입력해주세요.")
 
 def main():
-    """
-    프로그램 실행 루프
-    """
+  
     while True:
         city, month, day = get_filters()
         df = load_and_filter_data(city, month, day)
