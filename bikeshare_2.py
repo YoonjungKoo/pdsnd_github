@@ -89,6 +89,7 @@ def calculate_stats(df):
 def display_raw_data(df):
     """
     원시 데이터를 5행씩 출력
+    
     """
     start = 0
     while True:
