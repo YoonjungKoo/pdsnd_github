@@ -64,9 +64,9 @@ def calculate_stats(df):
     most_common_start_station = df['Start Station'].mode()[0]
     most_common_end_station = df['End Station'].mode()[0]
     common_route = (df['Start Station'] + ' -> ' + df['End Station']).mode()[0]
-    print(f"가장 많이 사용된 출발지: {most_common_start_station}")
-    print(f"가장 많이 사용된 도착지: {most_common_end_station}")
-    print(f"가장 빈번한 경로: {common_route}")
+    print(f"빈도 가장 높은 출발지: {most_common_start_station}")
+    print(f"빈도 가장 높은 도착지: {most_common_end_station}")
+    print(f"빈도 가장 높은 경로: {common_route}")
 
     print("\n[여행 시간 통계]")
     total_travel_time = df['Trip Duration'].sum()
@@ -84,11 +84,12 @@ def calculate_stats(df):
         most_common_year = int(df['Birth Year'].mode()[0])
         print(f"가장 오래된 출생 연도: {earliest_year}")
         print(f"가장 최근 출생 연도: {most_recent_year}")
-        print(f"가장 흔한 출생 연도: {most_common_year}")
+        print(f"가장 많은 출생 연도: {most_common_year}")
 
 def display_raw_data(df):
     """
     원시 데이터를 5행씩 출력
+    
     """
     start = 0
     while True:
