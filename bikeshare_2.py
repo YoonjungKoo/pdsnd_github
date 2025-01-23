@@ -120,7 +120,7 @@ def main():
 
         restart = input("\n프로그램을 다시 실행하시겠습니까? (yes/no): ").lower()
         if restart != 'yes':
-            print("프로그램을 종료합니다. 감사합니다!")
+            print("프로그램을 종료합니다.")
             break
 
 if __name__ == "__main__":
